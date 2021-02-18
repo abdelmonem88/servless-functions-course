@@ -2,7 +2,7 @@ const result = document.querySelector(".result");
 
 const fetchData = async () => {
  const response = await axios.get(
-  "https://serverless-functions-tutorial.netlify.app/.netlify/functions/2-basic-api"
+  "https://serverless-functions-tutorial.netlify.app/api/2-basic-api"
  );
  const products = response.data;
 
