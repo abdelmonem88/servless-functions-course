@@ -7,7 +7,7 @@ const fetchProduct = async () => {
   const id = window.location.search;
   const {
    data: { fields },
-  } = await axios.get(`/api/3-z-complete ${id}`);
+  } = await axios.get(`/api/3-z-complete${id}`);
   console.log(fields);
   const { name, desc, image, price } = fields;
   const img = image[0].url;
